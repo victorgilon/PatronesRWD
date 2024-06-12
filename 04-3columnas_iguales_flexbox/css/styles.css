@@ -39,3 +39,14 @@ h1 {
 }
 
 /** CODIGO AQUI **/
+
+@media (min-width: 768px) {
+   .tres-columnas{
+    display: flex;
+    justify-content: space-between;/*para que tengan espacio entre ellos */
+    /*gap: 2rem;*/ /** este gap no lo soporta safari el cal es utilizado por los iphone **/
+   }
+   .entrada-blog{
+    flex: 0 0 calc(33.3% - 1rem);
+   }
+}
